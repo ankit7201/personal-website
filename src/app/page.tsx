@@ -28,8 +28,10 @@ export default async function Home() {
             </div>
           </div>
           <ContactCard contactData={homePageData.contact} />
-          <Card />
-          <Card />
+          {homePageData.infoCard &&
+            homePageData.infoCard.map((info) => {
+              return <Card infoCard={info} />;
+            })}
         </div>
       </div>
     </div>

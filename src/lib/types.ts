@@ -21,8 +21,15 @@ export interface Contact extends Base {
   social: Social[];
 }
 
+export interface InfoCard extends Base {
+  title: string;
+  description: string;
+  href: string;
+}
+
 export interface HomePage extends Base {
   name: string;
   description: string;
   contact: Contact;
+  infoCard: InfoCard[];
 }

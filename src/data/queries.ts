@@ -19,5 +19,8 @@ export const HOME_PAGE_DATA_QUERY = qs.stringify({
         },
       },
     },
+    infoCard: {
+      fields: ["title", "description", "href"],
+    },
   },
 });
