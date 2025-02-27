@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const Card = ({ infoCard }: { infoCard: InfoCard }) => {
   return (
-    <Link href={infoCard.href}>
+    <Link href={infoCard.href} prefetch={false}>
       <div className="bg-gray-800 rounded-lg flex px-4 py-6 mt-4">
         <div className="flex w-full justify-between">
           <div className="flex flex-col">

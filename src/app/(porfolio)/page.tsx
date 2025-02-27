@@ -16,7 +16,7 @@ const homePageDataLoader = async () => {
 export default async function Home() {
   const homePageData: HomePage = await homePageDataLoader();
   return (
-    <div className="min-h-screen bg-gray-900">
+    <div className="min-h-screen">
       <div className="px-8 pt-6">
         <div className="max-w-4xl mx-auto">
           <div className="mb-10">
@@ -30,7 +30,7 @@ export default async function Home() {
           <ContactCard contactData={homePageData.contact} />
           {homePageData.infoCard &&
             homePageData.infoCard.map((info) => {
-              return <Card infoCard={info} />;
+              return <Card key={info.id} infoCard={info} />;
             })}
         </div>
       </div>

@@ -33,3 +33,22 @@ export interface HomePage extends Base {
   contact: Contact;
   infoCard: InfoCard[];
 }
+
+export interface Link extends Base {
+  text: string;
+  image: Media;
+  href: string;
+}
+
+export interface ProjectCard extends Base {
+  title: string;
+  description: string;
+  tags: string;
+  link: Link[];
+}
+
+export interface ProjectPage extends Base {
+  title: string;
+  description: string;
+  projectCards: ProjectCard[];
+}
