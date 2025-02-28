@@ -52,3 +52,18 @@ export interface ProjectPage extends Base {
   description: string;
   projectCards: ProjectCard[];
 }
+
+export interface BlogArticle extends Base {
+  title: string;
+  description: string;
+  publishedDate: string;
+  readingTime: string;
+  author?: string;
+  content?: string;
+  slug: string;
+}
+
+export interface BlogHomePage extends Base {
+  heading: string;
+  description: string;
+}

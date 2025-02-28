@@ -43,3 +43,21 @@ export const PROJECT_PAGE_DATA_QUERY = qs.stringify({
     },
   },
 });
+
+export const BLOG_HOME_PAGE = qs.stringify({
+  fields: ["heading", "description"],
+});
+
+export const BLOG_ARTICLES = qs.stringify({
+  fields: ["title", "description", "publishedDate", "readingTime", "slug"],
+});
+
+export const SINGLE_BLOG_ARTICLE = (slug: string) => {
+  return qs.stringify({
+    filters: {
+      slug: {
+        $eq: slug,
+      },
+    },
+  });
+};
