@@ -4,7 +4,6 @@ import { ArrowLeft } from "lucide-react";
 import { notFound } from "next/navigation";
 
 const getSingleBlog = async (slug: string) => {
-  console.log(slug);
   const data = await getSingleBlogData(slug);
   if (!data || data.error) {
     notFound();

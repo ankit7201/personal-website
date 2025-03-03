@@ -21,7 +21,7 @@ export const getHomePageData = async () => {
 };
 
 export const getProjectPageData = async () => {
-  const path = "/api/project-page";
+  const path = "/api/projects-page";
   const url = new URL(path, STRAPI_BASE_URL);
   url.search = PROJECT_PAGE_DATA_QUERY;
 

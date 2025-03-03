@@ -30,7 +30,7 @@ export default async function Home() {
           <ContactCard contactData={homePageData.contact} />
           {homePageData.infoCard &&
             homePageData.infoCard.map((info) => {
-              return <Card key={info.id} infoCard={info} />;
+              return <Card key={info.id} cardId={info.id} infoCard={info} />;
             })}
         </div>
       </div>

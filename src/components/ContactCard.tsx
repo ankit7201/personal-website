@@ -51,6 +51,7 @@ export const ContactCard = ({ contactData }: { contactData: Contact }) => {
                 href={getStrapiMedia(socialData.href) || undefined}
                 target="_blank"
                 className="bg-gray-700 p-4 rounded-lg text-gray-400 flex flex-1 justify-center"
+                key={socialData.id}
               >
                 <img
                   className="text-gray-400"
