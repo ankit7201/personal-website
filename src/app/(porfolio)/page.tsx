@@ -29,8 +29,8 @@ export default async function Home() {
           </div>
           <ContactCard contactData={homePageData.contact} />
           {homePageData.infoCard &&
-            homePageData.infoCard.map((info) => {
-              return <Card key={info.id} cardId={info.id} infoCard={info} />;
+            homePageData.infoCard.map((info, index) => {
+              return <Card key={index} infoCard={info} />;
             })}
         </div>
       </div>

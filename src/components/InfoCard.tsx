@@ -2,16 +2,9 @@ import { InfoCard } from "@/lib/types";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-export const Card = ({
-  infoCard,
-  cardId,
-}: {
-  infoCard: InfoCard;
-  cardId: number;
-}) => {
+export const Card = ({ infoCard }: { infoCard: InfoCard }) => {
   return (
     <Link
-      key={cardId}
       href={infoCard.href}
       prefetch={false}
       target={infoCard.href === "/blog" ? "_blank" : "_self"}
